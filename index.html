@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>採用情報｜株式会社オクダ大阪 - 解体工事・産業廃棄物処理のプロ集団</title>
+    <meta name="description" content="壊すんじゃない。次をつくる、最初の仕事。解体から廃棄物処理まで。街の未来をつくる総合解体のプロ集団。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --navy: #1A2E4A;
+            --orange: #E8820C;
+            --green: #2E7D5A;
+            --gray-bg: #F7F8FA;
+            --text: #2C2C2C;
+            --white: #FFFFFF;
+            --border: #E0E4EA;
+            --dark-navy: #0F1922;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden;
+            max-width: 100vw;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 68px;
+            background: rgba(26, 46, 74, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-links a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--orange);
+            transform: translateY(-2px);
+        }
+
+        .btn-apply-header {
+            padding: 10px 24px;
+            background: var(--orange);
+            color: var(--white);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .btn-apply-header:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgba(232, 130, 12, 0.4);
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            transition: all 0.3s;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 68px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 46, 74, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            padding: 40px 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .mobile-menu.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-menu nav {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .mobile-menu nav a {
+            font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://www.genspark.ai/api/files/s/xCTkwFHj?cache_control=3600') center/cover no-repeat;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1120px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(232, 130, 12, 0.2);
+            border: 1px solid var(--orange);
+            border-radius: 50px;
+            color: var(--orange);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-bottom: 32px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            margin-bottom: 40px;
+            line-height: 1.9;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn-primary {
+            padding: 16px 40px;
+            background: var(--orange);
+            color: var(--white);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 16px rgba(232, 130, 12, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(232, 130, 12, 0.4);
+        }
+
+        .btn-secondary {
+            padding: 16px 40px;
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+        .hero-badge {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .hero-badge span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-badge span::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--orange);
+            border-radius: 50%;
+        }
+
+        /* Section Common Styles */
+        section {
+            padding: 96px 0;
+            overflow-x: hidden;
+            max-width: 100vw;
+            width: 100%;
+        }
+
+        section.bg-gray {
+            background: var(--gray-bg);
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(232, 130, 12, 0.1);
+            border-radius: 50px;
+            color: var(--orange);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin-bottom: 16px;
+        }
+
+        .section-desc {
+            font-size: 1rem;
+            color: #5A5A5A;
+            line-height: 1.9;
+            margin-bottom: 48px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            width: 100%;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--orange);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+
+        /* Business Section */
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            width: 100%;
+        }
+
+        .business-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .business-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .business-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--orange), #FF9933);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+        }
+
+        .business-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .business-card p {
+            color: #5A5A5A;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .business-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .business-features li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: #5A5A5A;
+            font-size: 0.9rem;
+        }
+
+        .business-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* Project Cases */
+        .project-cases {
+            background: var(--white);
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            width: 100%;
+        }
+
+        .case-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .case-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .case-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .case-content {
+            padding: 24px;
+        }
+
+        .case-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(232, 130, 12, 0.1);
+            color: var(--orange);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .case-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .case-card p {
+            color: #5A5A5A;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .case-stats {
+            display: flex;
+            gap: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .case-stat {
+            flex: 1;
+        }
+
+        .case-stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--orange);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .case-stat-label {
+            font-size: 0.75rem;
+            color: #5A5A5A;
+            margin-top: 4px;
+        }
+
+        /* Employee Voices */
+        .voices {
+            background: var(--gray-bg);
+        }
+
+        .voices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            width: 100%;
+        }
+
+        .voice-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .voice-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .voice-header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .voice-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--orange);
+        }
+
+        .voice-info h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .voice-role {
+            font-size: 0.85rem;
+            color: var(--orange);
+            font-weight: 600;
+        }
+
+        .voice-year {
+            font-size: 0.8rem;
+            color: #5A5A5A;
+            margin-top: 4px;
+        }
+
+        .voice-content {
+            color: #5A5A5A;
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .voice-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .voice-tag {
+            padding: 4px 12px;
+            background: var(--gray-bg);
+            color: var(--navy);
+            font-size: 0.75rem;
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        /* Career Path */
+        .career {
+            background: var(--white);
+        }
+
+        .career-path {
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .career-step {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 32px;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        .career-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 80px;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--orange), transparent);
+        }
+
+        .career-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--orange), #FF9933);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 16px rgba(232, 130, 12, 0.3);
+            flex-shrink: 0;
+        }
+
+        .career-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .career-duration {
+            font-size: 0.85rem;
+            color: var(--orange);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .career-content p {
+            color: #5A5A5A;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .career-skills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .career-skill {
+            padding: 6px 14px;
+            background: var(--gray-bg);
+            color: var(--navy);
+            font-size: 0.8rem;
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        /* Benefits */
+        .benefits {
+            background: var(--gray-bg);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            width: 100%;
+        }
+
+        .benefit-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--green), #3FA075);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+        }
+
+        .benefit-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+
+        .benefit-item p {
+            color: #5A5A5A;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* Recruitment Table */
+        .recruitment {
+            background: var(--white);
+        }
+
+        .recruitment-table {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .table-label {
+            padding: 20px 24px;
+            background: var(--gray-bg);
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .table-value {
+            padding: 20px 24px;
+            color: var(--text);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            display: flex;
+            align-items: center;
+            word-break: break-word;
+        }
+
+        /* FAQ */
+        .faq {
+            background: var(--gray-bg);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--gray-bg);
+        }
+
+        .faq-question h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+            flex: 1;
+        }
+
+        .faq-icon {
+            width: 28px;
+            height: 28px;
+            background: var(--orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+        }
+
+        .faq-answer-inner {
+            padding: 0 24px 24px;
+            color: #5A5A5A;
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        /* Application */
+        .application {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .application .section-title {
+            color: var(--white);
+        }
+
+        .application .section-desc {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .apply-channels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .apply-channel {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .apply-channel:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .apply-channel i {
+            font-size: 2.5rem;
+            color: var(--orange);
+            margin-bottom: 16px;
+        }
+
+        .apply-channel h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .apply-channel p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .apply-channel .btn-primary {
+            width: 100%;
+            max-width: 240px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-navy);
+            color: var(--white);
+            padding: 64px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 48px;
+            width: 100%;
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--orange);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-section a:hover {
+            color: var(--orange);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Mobile CTA */
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-top: 1px solid var(--border);
+            padding: 12px 16px;
+            z-index: 998;
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-cta-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .mobile-cta .btn-primary,
+        .mobile-cta .btn-secondary {
+            padding: 14px 20px;
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 64px 0;
+            }
+
+            .career-step {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .career-step::after {
+                display: none;
+            }
+
+            .table-row {
+                grid-template-columns: 1fr;
+            }
+
+            .table-label {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav,
+            .header-actions .social-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            section {
+                padding: 48px 0;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .hero-title {
+                margin-bottom: 16px;
+            }
+
+            .hero-subtitle {
+                margin-bottom: 32px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .stats-grid,
+            .business-grid,
+            .cases-grid,
+            .voices-grid,
+            .benefits-grid,
+            .apply-channels,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mobile-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo">OKUDA OSAKA</a>
+            <nav>
+                <a href="#about">事業内容</a>
+                <a href="#jobs">募集職種</a>
+                <a href="#voices">社員の声</a>
+                <a href="#career">キャリアパス</a>
+                <a href="#benefits">福利厚生</a>
+                <a href="#application">応募する</a>
+            </nav>
+            <div class="header-actions">
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="#application" class="btn-apply-header">採用に応募</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#about" onclick="toggleMobileMenu()">事業内容</a>
+            <a href="#jobs" onclick="toggleMobileMenu()">募集職種</a>
+            <a href="#voices" onclick="toggleMobileMenu()">社員の声</a>
+            <a href="#career" onclick="toggleMobileMenu()">キャリアパス</a>
+            <a href="#benefits" onclick="toggleMobileMenu()">福利厚生</a>
+            <a href="#application" onclick="toggleMobileMenu()">応募する</a>
+            <div class="social-links" style="justify-content: center; margin-top: 24px;">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-label">RECRUITING 2026</span>
+            <h1 class="hero-title">壊すんじゃない。<br>次をつくる、最初の仕事。</h1>
+            <p class="hero-subtitle">解体から廃棄物処理まで。街の未来をつくる総合解体のプロ集団。<br>安全・丁寧・迅速をモットーに、近畿圏全域で60名のプロフェッショナルが活躍中。</p>
+            <div class="hero-cta">
+                <a href="#application" class="btn-primary">採用に応募する</a>
+                <a href="#about" class="btn-secondary">事業内容を見る</a>
+            </div>
+            <div class="hero-badge">
+                <span>設立2012年</span>
+                <span>社員数60名</span>
+                <span>近畿圏全域対応</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid fade-in">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="850">0</div>
+                    <div class="stat-label">年間施工実績（件）</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98.5">0</div>
+                    <div class="stat-label">リサイクル率（%）</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">連続無事故記録（年）</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">拠点数（大阪・東京・奈良）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business -->
+    <section id="about" class="bg-gray">
+        <div class="container">
+            <span class="section-label">OUR BUSINESS</span>
+            <h2 class="section-title">事業内容</h2>
+            <p class="section-desc">解体工事から産業廃棄物処理、リサイクルまで一貫して対応。創業以来、安全第一を最優先に、近畿圏全域で年間850件以上の施工実績を誇ります。</p>
+            
+            <div class="business-grid fade-in">
+                <div class="business-card">
+                    <div class="business-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>総合解体工事</h3>
+                    <p>ビル・マンション・戸建て住宅から大型商業施設まで、あらゆる建造物の解体工事を安全かつ迅速に実施。最新の重機と熟練技術で、近隣への配慮を徹底しながら工事を進めます。</p>
+                    <ul class="business-features">
+                        <li>ビル・マンション解体（RC造・SRC造対応）</li>
+                        <li>木造住宅解体（在来工法・2×4工法対応）</li>
+                        <li>店舗・工場解体（内装解体・スケルトン工事）</li>
+                        <li>アスベスト除去工事（有資格者による安全作業）</li>
+                        <li>防音・防塵対策（近隣配慮の徹底）</li>
+                    </ul>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon"><i class="fas fa-recycle"></i></div>
+                    <h3>産業廃棄物処理</h3>
+                    <p>解体工事で発生する廃棄物を適切に分別・処理。産業廃棄物処理業の許可を取得し、法令を遵守した処理を行います。リサイクル率98.5%を実現し、環境保護に貢献しています。</p>
+                    <ul class="business-features">
+                        <li>産業廃棄物収集運搬（府県許可取得済み）</li>
+                        <li>中間処理施設での適正処理</li>
+                        <li>マニフェスト管理の徹底</li>
+                        <li>コンクリート・木材・金属の分別リサイクル</li>
+                        <li>最終処分場との連携による完全処理</li>
+                    </ul>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>リサイクル事業</h3>
+                    <p>解体で発生したコンクリート・木材・金属を徹底的に分別し、再資源化。環境負荷を最小限に抑え、循環型社会の実現に貢献。リサイクル率98.5%は業界トップクラスの実績です。</p>
+                    <ul class="business-features">
+                        <li>コンクリート再生砕石への加工</li>
+                        <li>木材チップ化（バイオマス燃料として活用）</li>
+                        <li>金属スクラップの回収・売却</li>
+                        <li>石膏ボード・プラスチックの分別回収</li>
+                        <li>ゼロエミッション達成に向けた取り組み</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Cases -->
+    <section class="project-cases">
+        <div class="container">
+            <span class="section-label">PROJECT CASES</span>
+            <h2 class="section-title">施工実績</h2>
+            <p class="section-desc">近畿圏全域で年間850件以上の施工実績。大型ビルから木造住宅まで、あらゆる解体工事に対応しています。</p>
+            
+            <div class="cases-grid fade-in">
+                <div class="case-card">
+                    <img src="https://www.genspark.ai/api/files/s/4OXPXmQX?cache_control=3600" alt="大型商業ビル解体工事" class="case-image">
+                    <div class="case-content">
+                        <span class="case-tag">商業施設</span>
+                        <h3>大阪市中央区 大型商業ビル解体</h3>
+                        <p>地上12階建て、延床面積8,500㎡の商業ビルを安全に解体。繁華街での工事のため、防音・防塵対策を徹底し、近隣からの苦情ゼロで完工。</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <div class="case-stat-value">120</div>
+                                <div class="case-stat-label">工期（日）</div>
+                            </div>
+                            <div class="case-stat">
+                                <div class="case-stat-value">99.2%</div>
+                                <div class="case-stat-label">リサイクル率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="https://www.genspark.ai/api/files/s/bGSPLO4o?cache_control=3600" alt="マンション解体工事" class="case-image">
+                    <div class="case-content">
+                        <span class="case-tag">集合住宅</span>
+                        <h3>堺市 築40年RC造マンション解体</h3>
+                        <p>老朽化した5階建てマンション（32戸）の解体工事。アスベスト除去も含め、法令を完全遵守した安全作業で無事故完工。</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <div class="case-stat-value">75</div>
+                                <div class="case-stat-label">工期（日）</div>
+                            </div>
+                            <div class="case-stat">
+                                <div class="case-stat-value">98.8%</div>
+                                <div class="case-stat-label">リサイクル率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="https://www.genspark.ai/api/files/s/xCTkwFHj?cache_control=3600" alt="工場解体工事" class="case-image">
+                    <div class="case-content">
+                        <span class="case-tag">工場・倉庫</span>
+                        <h3>東大阪市 鉄骨造工場解体</h3>
+                        <p>稼働を停止した食品工場の解体。大型重機を投入し、予定より10日早く完工。廃棄物も徹底分別でリサイクル率99%超を達成。</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <div class="case-stat-value">50</div>
+                                <div class="case-stat-label">工期（日）</div>
+                            </div>
+                            <div class="case-stat">
+                                <div class="case-stat-value">99.3%</div>
+                                <div class="case-stat-label">リサイクル率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Voices -->
+    <section id="voices" class="voices">
+        <div class="container">
+            <span class="section-label">EMPLOYEE VOICES</span>
+            <h2 class="section-title">社員の声</h2>
+            <p class="section-desc">現場で活躍する社員たちのリアルな声をお届けします。</p>
+            
+            <div class="voices-grid fade-in">
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <img src="https://www.genspark.ai/api/files/s/PpMgebYQ?cache_control=3600" alt="田中健太郎" class="voice-avatar">
+                        <div class="voice-info">
+                            <h4>田中 健太郎</h4>
+                            <div class="voice-role">現場監督</div>
+                            <div class="voice-year">入社5年目 / 30歳</div>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        前職は別業界の営業職でしたが、「街づくりに関わりたい」という思いで転職を決意。未経験からのスタートでしたが、先輩方の丁寧な指導と充実した研修制度のおかげで、今では現場を任されるまでに成長できました。毎月の安全ミーティングで意見交換ができる環境も魅力です。大規模な解体プロジェクトを完遂した時の達成感は何物にも代えがたいですね。
+                    </div>
+                    <div class="voice-tags">
+                        <span class="voice-tag">#未経験入社</span>
+                        <span class="voice-tag">#キャリアアップ</span>
+                        <span class="voice-tag">#現場監督</span>
+                    </div>
+                </div>
+
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <img src="https://www.genspark.ai/api/files/s/lWijQtuP?cache_control=3600" alt="山田優子" class="voice-avatar">
+                        <div class="voice-info">
+                            <h4>山田 優子</h4>
+                            <div class="voice-role">事務・経理担当</div>
+                            <div class="voice-year">入社3年目 / 27歳</div>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        建設業界は男性中心というイメージがありましたが、オクダ大阪では女性も活躍しやすい環境が整っています。産休・育休制度も充実しており、実際に復帰された先輩もいらっしゃいます。事務職として工事書類の管理やマニフェスト処理を担当していますが、現場スタッフとのコミュニケーションも活発で、会社全体が一体となってプロジェクトを進める雰囲気が好きです。
+                    </div>
+                    <div class="voice-tags">
+                        <span class="voice-tag">#女性活躍</span>
+                        <span class="voice-tag">#ワークライフバランス</span>
+                        <span class="voice-tag">#事務職</span>
+                    </div>
+                </div>
+
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <img src="https://www.genspark.ai/api/files/s/2SZdRKtT?cache_control=3600" alt="佐藤誠" class="voice-avatar">
+                        <div class="voice-info">
+                            <h4>佐藤 誠</h4>
+                            <div class="voice-role">重機オペレーター</div>
+                            <div class="voice-year">入社12年目 / 45歳</div>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        創業間もない頃から在籍していますが、会社の成長を肌で感じています。最新の重機を導入し、安全対策にも惜しみなく投資する姿勢が素晴らしいです。技能講習や資格取得の支援も充実しており、私自身も各種の重機免許や玉掛け、移動式クレーンなど複数の資格を取得できました。ベテランとして若手の育成にも携わっており、技術を次世代に継承することにやりがいを感じています。
+                    </div>
+                    <div class="voice-tags">
+                        <span class="voice-tag">#ベテラン</span>
+                        <span class="voice-tag">#技術継承</span>
+                        <span class="voice-tag">#重機オペレーター</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Path -->
+    <section id="career" class="career">
+        <div class="container">
+            <span class="section-label">CAREER PATH</span>
+            <h2 class="section-title">キャリアパス</h2>
+            <p class="section-desc">入社から独り立ちまで、段階的に成長できる充実した育成プログラムをご用意しています。</p>
+            
+            <div class="career-path fade-in">
+                <div class="career-step">
+                    <div class="career-number">1</div>
+                    <div class="career-content">
+                        <h3>入社〜3ヶ月：基礎研修期間</h3>
+                        <div class="career-duration">未経験者も安心のサポート体制</div>
+                        <p>座学と実技を組み合わせた基礎研修からスタート。建設業の基礎知識、安全衛生教育、解体工事の流れ、廃棄物処理の法令知識などを学びます。現場では先輩社員がマンツーマンで指導。重機の基本操作や工具の使い方、安全確認の方法など、実務に必要なスキルを一から丁寧に教えます。</p>
+                        <div class="career-skills">
+                            <span class="career-skill">安全衛生教育</span>
+                            <span class="career-skill">解体工事基礎知識</span>
+                            <span class="career-skill">廃棄物処理法令</span>
+                            <span class="career-skill">重機基本操作</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="career-step">
+                    <div class="career-number">2</div>
+                    <div class="career-content">
+                        <h3>4ヶ月〜1年：実務習得期間</h3>
+                        <div class="career-duration">現場で実践スキルを磨く</div>
+                        <p>先輩のサポートのもと、実際の解体現場で経験を積みます。木造住宅の解体からスタートし、徐々に規模の大きな現場へ。重機操作、廃棄物の分別作業、近隣対応など、現場業務全般を学びます。資格取得支援制度を利用して、車両系建設機械や玉掛けなどの資格取得にもチャレンジできます。</p>
+                        <div class="career-skills">
+                            <span class="career-skill">木造解体作業</span>
+                            <span class="career-skill">重機操作技術</span>
+                            <span class="career-skill">廃棄物分別</span>
+                            <span class="career-skill">資格取得開始</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="career-step">
+                    <div class="career-number">3</div>
+                    <div class="career-content">
+                        <h3>1年〜3年：中堅スタッフ</h3>
+                        <div class="career-duration">独り立ちして責任ある仕事へ</div>
+                        <p>一人で現場作業を完結できるようになり、後輩の指導も担当。RC造・鉄骨造など大型物件の解体にも参画し、より高度な技術を身につけます。施工管理や工程管理の基礎も学び、将来の現場監督を目指します。技能講習を受講し、車両系建設機械（解体用）、フォークリフト、玉掛け、移動式クレーンなどの資格を取得。</p>
+                        <div class="career-skills">
+                            <span class="career-skill">大型物件対応</span>
+                            <span class="career-skill">後輩指導</span>
+                            <span class="career-skill">施工管理基礎</span>
+                            <span class="career-skill">各種資格取得</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="career-step">
+                    <div class="career-number">4</div>
+                    <div class="career-content">
+                        <h3>3年以降：現場監督・管理職</h3>
+                        <div class="career-duration">プロジェクト全体を統括するリーダーへ</div>
+                        <p>現場監督として、工程管理・安全管理・品質管理・原価管理の全てを統括。発注者や協力会社との折衝、工事計画の立案、チームマネジメントなど、プロジェクト全体を動かす重要な役割を担います。解体工事施工技士や1級土木施工管理技士などの国家資格取得も支援。将来的には支店長や本部マネージャーなど、経営幹部へのキャリアパスも開かれています。</p>
+                        <div class="career-skills">
+                            <span class="career-skill">現場監督</span>
+                            <span class="career-skill">工程・安全管理</span>
+                            <span class="career-skill">国家資格取得</span>
+                            <span class="career-skill">経営幹部候補</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <span class="section-label">BENEFITS</span>
+            <h2 class="section-title">福利厚生・待遇</h2>
+            <p class="section-desc">社員が安心して長く働ける環境を整えています。</p>
+            
+            <div class="benefits-grid fade-in">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-yen-sign"></i></div>
+                    <h4>充実の給与体系</h4>
+                    <p>月給25万円〜45万円（経験・資格による）+ 賞与年2回（昨年度実績3.5ヶ月分）+ 各種手当（現場手当、資格手当、家族手当、住宅手当）</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>資格取得支援制度</h4>
+                    <p>資格取得費用を全額会社負担。技能講習受講料、受験費用、資格取得後は毎月の資格手当支給（3,000円〜30,000円）。年間平均2〜3つの資格取得実績。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>安全への徹底投資</h4>
+                    <p>最新の安全装備を全社員に支給。月1回の安全ミーティング、年2回の安全大会開催。15年連続無事故記録を継続中。労災保険完備で万が一にも対応。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h4>休日・休暇制度</h4>
+                    <p>週休2日制（日曜・他1日）、年間休日105日、GW・夏季・年末年始休暇、有給休暇（初年度10日）、慶弔休暇、産前産後・育児休暇。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>健康管理サポート</h4>
+                    <p>年1回の健康診断（会社負担）、インフルエンザ予防接種補助、提携医療機関での割引受診、メンタルヘルスケア相談窓口設置。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                    <h4>社内イベント</h4>
+                    <p>年2回の全社員懇親会、創立記念パーティー、安全大会後の慰労会、部門別の食事会など、社員同士の交流機会が豊富。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-car"></i></div>
+                    <h4>通勤・社用車完備</h4>
+                    <p>通勤手当全額支給（上限月3万円）、マイカー通勤可（駐車場完備）、現場への直行直帰OK、社用車・社用携帯貸与。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-home"></i></div>
+                    <h4>住宅サポート</h4>
+                    <p>住宅手当支給（月1万円〜3万円）、社員寮完備（大阪・東京）、引越し支援金制度、提携不動産会社での割引紹介。</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-baby"></i></div>
+                    <h4>育児支援制度</h4>
+                    <p>産前産後休暇、育児休業制度（取得実績あり）、復職後の時短勤務制度、子ども手当支給（1人につき月5,000円）。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment -->
+    <section id="jobs" class="recruitment">
+        <div class="container">
+            <span class="section-label">RECRUITMENT</span>
+            <h2 class="section-title">募集要項</h2>
+            <p class="section-desc">現在募集中の職種です。未経験者も歓迎します。</p>
+            
+            <div class="fade-in" style="margin-bottom: 48px;">
+                <div class="recruitment-table">
+                    <div class="table-row">
+                        <div class="table-label">募集職種</div>
+                        <div class="table-value">
+                            <strong>①解体工事スタッフ（現場作業員・重機オペレーター）</strong><br>
+                            <strong>②現場監督候補</strong><br>
+                            <strong>③事務スタッフ（経理・総務）</strong>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">応募資格</div>
+                        <div class="table-value">
+                            ①学歴不問、未経験歓迎、普通自動車免許（AT可）<br>
+                            ②高卒以上、建設業経験者優遇、施工管理技士資格保有者優遇<br>
+                            ③高卒以上、PC基本操作可能、簿記3級以上歓迎
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">給与</div>
+                        <div class="table-value">
+                            ①月給25万円〜40万円（経験・資格による）<br>
+                            ②月給30万円〜45万円（経験・資格による）<br>
+                            ③月給22万円〜30万円（経験による）<br>
+                            ※試用期間3ヶ月あり（条件変更なし）<br>
+                            ※賞与年2回（昨年度実績3.5ヶ月分）<br>
+                            ※各種手当別途支給
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">勤務時間</div>
+                        <div class="table-value">
+                            8:00〜17:00（実働8時間、休憩1時間）<br>
+                            ※現場により多少の変動あり<br>
+                            ※残業月平均20時間程度
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">休日・休暇</div>
+                        <div class="table-value">
+                            週休2日制（日曜・他1日）<br>
+                            年間休日105日<br>
+                            GW・夏季・年末年始休暇<br>
+                            有給休暇（初年度10日）<br>
+                            慶弔休暇、産前産後・育児休暇
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">待遇・福利厚生</div>
+                        <div class="table-value">
+                            社会保険完備（健康・厚生年金・雇用・労災）<br>
+                            通勤手当全額支給（上限月3万円）<br>
+                            住宅手当（月1〜3万円）<br>
+                            家族手当（配偶者1万円、子1人5千円）<br>
+                            資格手当（月3千円〜3万円）<br>
+                            現場手当（日額1千円〜2千円）<br>
+                            資格取得費用全額会社負担<br>
+                            社用車・社用携帯貸与<br>
+                            制服・安全装備支給<br>
+                            健康診断年1回（会社負担）<br>
+                            社員寮完備（大阪・東京）<br>
+                            退職金制度（勤続3年以上）
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">勤務地</div>
+                        <div class="table-value">
+                            大阪本社：大阪市住之江区南港北1-1-1<br>
+                            東京支店：東京都江東区有明3-7-26<br>
+                            奈良営業所:奈良市大宮町1-1-25<br>
+                            ※現場直行直帰可<br>
+                            ※転勤の可能性あり（希望考慮）
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-label">選考プロセス</div>
+                        <div class="table-value">
+                            書類選考 → 一次面接 → 現場見学 → 最終面接 → 内定<br>
+                            ※選考期間は約2週間程度<br>
+                            ※面接日程は柔軟に対応します
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">よくある質問</h2>
+            <p class="section-desc">応募前の疑問にお答えします。</p>
+            
+            <div class="faq-list fade-in">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>未経験でも応募できますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、大歓迎です。現在活躍している社員の約60%が未経験からのスタートです。入社後3ヶ月間は基礎研修期間として、座学と実技を組み合わせた充実したプログラムを用意しています。先輩社員がマンツーマンで指導しますので、安心してスタートできます。建設業に興味があり、やる気のある方であれば、経験は問いません。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>資格は必要ですか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            入社時に必要な資格は普通自動車免許（AT可）のみです。解体工事に必要な資格（車両系建設機械、玉掛け、移動式クレーンなど）は入社後に取得していただきます。資格取得費用は全額会社負担で、技能講習の受講時間も勤務時間として扱います。資格取得後は毎月資格手当が支給されますので、キャリアアップと収入アップを同時に実現できます。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>女性も活躍できますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            もちろんです。現場作業員は男性が多いですが、事務職や現場監督では女性社員も活躍しています。産休・育休制度も整っており、実際に取得して復帰された実績もあります。力仕事は重機で行いますので、女性でも十分活躍できます。近年は建設業界全体で女性の活躍推進が進んでおり、当社も積極的に女性採用を行っています。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>残業はどのくらいありますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            月平均20時間程度です。繁忙期（春・秋）は30時間程度になることもありますが、36協定を遵守し、過度な残業は発生しないよう管理しています。残業代は1分単位で全額支給します。また、工事の進捗状況により早く終わる日もあり、メリハリをつけて働けます。ワークライフバランスを大切にしながら、しっかり稼げる環境です。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>転勤はありますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            大阪・東京・奈良の3拠点がありますので、キャリアアップに伴い転勤の可能性はあります。ただし、本人の希望やご家族の状況を最大限考慮しますので、強制的な転勤はありません。転勤時は引越し費用全額会社負担、住宅手当増額、社員寮の利用など、手厚いサポートを行います。むしろ、複数拠点で経験を積むことでキャリアの幅が広がるメリットもあります。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>危険な仕事ではないですか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            安全管理を最優先に考えています。月1回の安全ミーティング、年2回の安全大会、毎朝のKY活動（危険予知活動）、最新の安全装備支給など、徹底した安全対策を実施。その結果、15年連続無事故記録を継続中です。解体工事は正しい知識と手順を守れば、決して危険な仕事ではありません。むしろ、安全意識が高まることで、日常生活でも役立つスキルが身につきます。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>年齢制限はありますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            特に設けていません。20代から50代まで幅広い年齢層が活躍しています。若手の方は将来の幹部候補として、ベテランの方は豊富な社会人経験を活かしていただけます。実際に、40代で転職して現場監督として活躍している社員もいます。大切なのは年齢ではなく、やる気と向上心です。長く働ける環境を整えていますので、安心してご応募ください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>応募から入社までどのくらいかかりますか？</h4>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            書類選考、一次面接、現場見学、最終面接を経て、約2週間程度で内定となります。面接日程は柔軟に対応しますので、現在お仕事をされている方でも調整可能です。内定後、1ヶ月〜2ヶ月後の入社が一般的ですが、入社時期についてもご相談に応じます。急募の場合は、より短期間での選考・入社も可能です。まずはお気軽にお問い合わせください。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application -->
+    <section id="application" class="application">
+        <div class="container">
+            <span class="section-label" style="background: rgba(255,255,255,0.15); color: var(--orange);">JOIN US</span>
+            <h2 class="section-title">応募方法</h2>
+            <p class="section-desc">以下のいずれかの方法でご応募ください。ご質問だけでも歓迎です。</p>
+            
+            <div class="apply-channels fade-in">
+                <div class="apply-channel">
+                    <i class="fas fa-envelope"></i>
+                    <h4>メールで応募</h4>
+                    <p>履歴書（写真貼付）を添付してお送りください。</p>
+                    <a href="mailto:recruit@okuda-osaka.jp" class="btn-primary">メールを送る</a>
+                </div>
+
+                <div class="apply-channel">
+                    <i class="fas fa-phone"></i>
+                    <h4>電話で応募</h4>
+                    <p>採用担当が丁寧に対応いたします。平日9:00〜18:00</p>
+                    <a href="tel:0661234567" class="btn-primary">06-6123-4567</a>
+                </div>
+
+                <div class="apply-channel">
+                    <i class="fab fa-line"></i>
+                    <h4>LINEで相談</h4>
+                    <p>気軽に質問できます。友だち追加してトーク開始。</p>
+                    <a href="#" class="btn-primary">LINE追加</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 24px;">
+                    まずは気軽にお問い合わせください。会社見学・現場見学も随時受付中です。
+                </p>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem;">
+                    株式会社オクダ大阪 採用担当<br>
+                    〒559-0034 大阪市住之江区南港北1-1-1<br>
+                    TEL: 06-6123-4567 / E-mail: recruit@okuda-osaka.jp
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>株式会社オクダ大阪</h4>
+                    <p>代表取締役：奥田真規</p>
+                    <p>設立：2012年4月</p>
+                    <p>資本金：3,000万円</p>
+                    <p>社員数：60名</p>
+                    <p>事業内容：解体工事、産業廃棄物処理、リサイクル事業</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>拠点</h4>
+                    <p><strong>大阪本社</strong><br>〒559-0034<br>大阪市住之江区南港北1-1-1</p>
+                    <p><strong>東京支店</strong><br>〒135-0063<br>東京都江東区有明3-7-26</p>
+                    <p><strong>奈良営業所</strong><br>〒630-8115<br>奈良市大宮町1-1-25</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <a href="#about">事業内容</a>
+                    <a href="#jobs">募集職種</a>
+                    <a href="#voices">社員の声</a>
+                    <a href="#career">キャリアパス</a>
+                    <a href="#benefits">福利厚生</a>
+                    <a href="#application">応募する</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Okuda Osaka Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile CTA -->
+    <div class="mobile-cta">
+        <div class="mobile-cta-inner">
+            <a href="tel:0661234567" class="btn-primary"><i class="fas fa-phone"></i> 電話で応募</a>
+            <a href="#application" class="btn-secondary"><i class="fas fa-envelope"></i> メールで応募</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Count Up Animation
+        function countUp(element) {
+            const target = parseFloat(element.getAttribute('data-count'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const isDecimal = target % 1 !== 0;
+
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+            }, 16);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.stat-number');
+                    numbers.forEach(num => {
+                        if (num.textContent === '0') {
+                            countUp(num);
+                        }
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats-grid');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').style.maxHeight = '0';
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        // Header Scroll Effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 16px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Prevent horizontal scroll
+        document.body.style.overflowX = 'hidden';
+        document.documentElement.style.overflowX = 'hidden';
+    </script>
+</body>
+</html>
